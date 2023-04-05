@@ -35,3 +35,12 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+---
+apiVersion: v1
+data:
+  TIME_END_REMOVE: 13:00,13:30
+  TIME_START_REMOVE: 11:30,13:00
+kind: ConfigMap
+metadata:
+  name: eform
+
